@@ -957,12 +957,12 @@ client.on('message', msg => {
 });
 
 
-var AsciiTable = require('ascii-data-table').default
-client.on('message', message =>{
 
+client.on('message', message =>{
+    var prefix = "$" ;
     if(message.content == prefix +"roles"){
         if(message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
-        var 
+  
         ros=message.guild.roles.size,
         data = [['Rank', 'RoleName']]
         for(let i =0;i<ros;i++){
