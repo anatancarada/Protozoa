@@ -59,6 +59,8 @@ ${emoji2}|$𝙞𝙙 ⟿⟿⟿⟿⟿ 𝙔𝙤𝙪𝙧 𝙄𝘿|${emoji4}
 
 ${emoji2}|$𝙪𝙣𝙗𝙖𝙣𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙪𝙣𝙗𝙖𝙣 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4}
 
+${emoji2}|$𝙖𝙡𝙡𝙧𝙤𝙡𝙚𝙨 ⟿⟿⟿⟿⟿ 𝙎𝙚𝙚 𝘼𝙡𝙡 𝙍𝙤𝙡𝙚𝙨|${emoji4}
+
 ${emoji2}|$𝙣𝙞𝙘𝙠 ⟿ 𝘾𝙝𝙖𝙣𝙜𝙚 𝙣𝙞𝙘𝙠𝙣𝙖𝙢𝙚 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4} 
 
 ${emoji2}|$𝙗𝙖𝙣𝙡𝙞𝙨𝙩 ⟿⟿ 𝙉𝙪𝙢𝙗𝙚𝙧 𝘽𝙖𝙣 𝙛𝙧𝙤𝙢 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
@@ -1058,7 +1060,7 @@ client.on ("guildMemberRemove", member => {
 
 client.on("message", msg => {//Toixc Codes
 var prefix = '$';//البرفكس
-if(msg.content.startsWith(prefix + "roles")){//Toixc Codes
+if(msg.content.startsWith(prefix + "allroles")){//Toixc Codes
 var embed = new Discord.RichEmbed()//Toixc Codes
 .setAuthor(msg.author.username, msg.author.avatarURL)
 .setThumbnail(msg.guild.iconURL)
