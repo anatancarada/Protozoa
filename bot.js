@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const ms = require("ms");
 
 
 // playing
@@ -957,23 +958,36 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+    var prefix = "$";
+if (command === "remind") {//Magic0 
 
-client.on('message', message =>{
-    var prefix = "$" ;
-    if(message.content == prefix +"roles"){
-        if(message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
-  
-        ros=message.guild.roles.size,
-        data = [['Rank', 'Protozoa']]
-        for(let i =0;i<ros;i++){
-            if(message.guild.roles.array()[i].id !== message.guild.id){
-         data.push([i,`${message.guild.roles.filter(r => r.position == ros-i).map(r=>r.name)}`])
-        }}
-        let res = AsciiTable.table(data)
+    let reminderTime = args[0];
+    if (!reminderTime) return message.channel.send("**Specify a time for me to remind you. Usage: /remind 15min any text or code**");
 
-        message.channel.send(`**\`\`\`xl\n${res}\`\`\`**`);
-    }
-});
+    let reminder = args.slice(1).join(" ");
+
+    let remindEmbed = new Discord.RichEmbed()//Magic0
+        .setColor('#ffffff')
+        .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
+        .addField("Reminder", `\`\`\`${reminder}\`\`\``)
+        .addField("Time", `\`\`\`${reminderTime}\`\`\``)
+        .setTimestamp();
+
+    message.channel.send(remindEmbed);//Magic0
+
+
+    setTimeout(function() {
+        let remindEmbed = new Discord.RichEmbed()
+            .setColor('#ffffff')
+            .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
+            .addField("Reminder", `\`\`\`${reminder}\`\`\``)
+            .setTimestamp()
+
+        message.channel.send(remindEmbed);//Magic0
+    }, ms(reminderTime));//Magic0
+
+} //Magic0
 
 
 client.login(process.env.BOT_TOKEN);
