@@ -47,6 +47,10 @@ ${emoji2}|$𝙨𝙖𝙮 ⟿⟿⟿⟿⟿⟿ 𝙎𝙩𝙖𝙩𝙪𝙨 𝙤𝙛 �
 
 ${emoji2}|$𝙚𝙢𝙤𝙟𝙞𝙨 ⟿⟿⟿⟿⟿ 𝙀𝙢𝙤𝙟𝙞 𝙊𝙛 𝙎𝙚𝙧𝙫𝙚𝙧|${emoji4}
 
+${emoji2}|$𝙞𝙙 ⟿⟿⟿⟿⟿ 𝙔𝙤𝙪𝙧 𝙄𝘿|${emoji4}
+
+
+
   `
 ,`
         **${emoji3}  𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦  ${emoji}**
@@ -1008,5 +1012,17 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+   if (message.content === "$id") {
+   let embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setThumbnail(message.author.avatarURL)
+  .addField("Name:",`${message.author.username}`, true)
+  .addField('Discrim:',"#" + `${message.author.discriminator}`, true)
+  .addField("ID:", `${message.author.id}`, true)
+  .addField("Create At:", `${message.author.createdAt}`, true)
+  message.channel.sendEmbed(embed);
+    }
+});
 
 client.login(process.env.BOT_TOKEN);
