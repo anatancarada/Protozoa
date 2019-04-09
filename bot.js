@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 // playing
 client.on('ready', () => {                           
-client.user.setGame(`My.Melody | use:$help `,'https://www.twitch.tv/ℕ o v a Codes♥');
+client.user.setGame(`Protozoa | use:$help `,'https://www.twitch.tv/ℕ o v a Codes♥');
   });
 
 
@@ -13,10 +13,10 @@ client.user.setGame(`My.Melody | use:$help `,'https://www.twitch.tv/ℕ o v a Co
 
 
 client.on('message', message => {
-let emoji = client.guilds.get("553973946354237440").emojis.find(r => r.name === "mag");
-let emoji2 = client.guilds.get("553973946354237440").emojis.find(r => r.name === "Mfire");
-let emoji3 = client.guilds.get("553973946354237440").emojis.find(r => r.name === "mag2");
-let emoji4 = client.guilds.get("553973946354237440").emojis.find(r => r.name === "purple");
+let emoji = client.guilds.get("564734929641013268").emojis.find(r => r.name === "rr");
+let emoji2 = client.guilds.get("564734929641013268").emojis.find(r => r.name === "Nitro");
+let emoji3 = client.guilds.get("564734929641013268").emojis.find(r => r.name === "ll");
+let emoji4 = client.guilds.get("564734929641013268").emojis.find(r => r.name === "google");
 
               var prefix = "$" ;
 if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send The Help In DMS // Code By Magic0
@@ -24,13 +24,13 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
         **${emoji3}  𝗣𝗨𝗣𝗟𝗜𝗖 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦   ${emoji}**
 
 **
-${emoji2}**|-server ⟿⟿⟿⟿⟿ About the server)|**${emoji4}
+${emoji2}**|$server ⟿⟿⟿⟿⟿ About the server)|**${emoji4}
 
-${emoji2}**|-allbots ⟿⟿ Nubmers bots in server|**${emoji4}
+${emoji2}**|$allbots ⟿⟿ Nubmers bots in server|**${emoji4}
 
-${emoji2}**|-botin ⟿⟿⟿⟿⟿⟿ Bot Information|**${emoji4}
+${emoji2}**|$botin ⟿⟿⟿⟿⟿⟿ Bot Information|**${emoji4}
 
-${emoji2}**|-report ⟿⟿⟿⟿⟿ Report a member|**${emoji4}
+${emoji2}**|$report ⟿⟿⟿⟿⟿ Report a member|**${emoji4}
 
 ${emoji2}**|-support ⟿⟿ Contact with the bot owner|**${emoji4}
 
