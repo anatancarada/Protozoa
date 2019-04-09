@@ -27,6 +27,8 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 **
 ${emoji2}|$𝙨𝙚𝙧𝙫𝙚𝙧 ⟿⟿⟿⟿⟿ 𝘼𝙗𝙤𝙪𝙩 𝙩𝙝𝙚 𝙨𝙚𝙧𝙫𝙚𝙧)|${emoji4}
 
+${emoji2}|$𝙪𝙣𝙗𝙖𝙣𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙪𝙣𝙗𝙖𝙣 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4}
+
 ${emoji2}|𝙝𝙞,𝙥𝙞𝙣𝙜,𝙗𝙮𝙚 ⟿⟿⟿⟿⟿ 𝙍𝙚𝙥𝙡𝙖𝙮𝙞𝙣𝙜 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨)|${emoji4}
 
 ${emoji2}|$𝙖𝙡𝙡𝙗𝙤𝙩𝙨 ⟿⟿ 𝙉𝙪𝙗𝙢𝙚𝙧𝙨 𝙗𝙤𝙩𝙨 𝙞𝙣 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
@@ -958,7 +960,27 @@ client.on('message', msg => {
 });
 
 
+client.on('message',async message => {
+  if(message.content === '$unbanall') {
+    var user = message.mentions.users.first();
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('❌|**`ADMINISTRATOR`لا توجد لديك صلاحية `**');
+    if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
+    const guild = message.guild;
 
+  message.guild.fetchBans().then(ba => {
+  ba.forEach(ns => {
+  message.guild.unban(ns);
+  const embed= new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setDescription(`**✅ Has Been Unban For All**`)
+    .setFooter('Requested by '+message.author.username, message.author.avatarURL)
+  message.channel.sendEmbed(embed);
+  guild.owner.send(`سيرفر : ${guild.name}
+  **تم فك الباند عن الجميع بواسطة** : <@${message.author.id}>`) 
+  });
+  });
+  }
+  });
 
 
 client.login(process.env.BOT_TOKEN);
