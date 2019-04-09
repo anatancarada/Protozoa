@@ -27,7 +27,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 **
 ${emoji2}|$𝙨𝙚𝙧𝙫𝙚𝙧 ⟿⟿⟿⟿⟿ 𝘼𝙗𝙤𝙪𝙩 𝙩𝙝𝙚 𝙨𝙚𝙧𝙫𝙚𝙧)|${emoji4}
 
-${emoji2}|$𝙪𝙣𝙗𝙖𝙣𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙪𝙣𝙗𝙖𝙣 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4}
+${emoji2}|$𝙏𝙞𝙢𝙚𝙧 ⟿⟿⟿⟿⟿ 𝙨𝙚𝙩 𝙩𝙞𝙢𝙚𝙧|${emoji4}
 
 ${emoji2}|𝙝𝙞,𝙥𝙞𝙣𝙜,𝙗𝙮𝙚 ⟿⟿⟿⟿⟿ 𝙍𝙚𝙥𝙡𝙖𝙮𝙞𝙣𝙜 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨)|${emoji4}
 
@@ -50,6 +50,8 @@ ${emoji2}|$𝙚𝙢𝙤𝙟𝙞𝙨 ⟿⟿⟿⟿⟿ 𝙀𝙢𝙤𝙟𝙞 𝙊�
   `
 ,`
         **${emoji3}  𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦  ${emoji}**
+
+${emoji2}|$𝙪𝙣𝙗𝙖𝙣𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙪𝙣𝙗𝙖𝙣 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4}
 
 ${emoji2}|$𝙣𝙞𝙘𝙠 ⟿ 𝘾𝙝𝙖𝙣𝙜𝙚 𝙣𝙞𝙘𝙠𝙣𝙖𝙢𝙚 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4} 
 
@@ -999,7 +1001,7 @@ client.on('message', message => {
   message.channel.send("✅ " + "| Timer Started for: " + `${ms(ms(Timer), {long: true})}`)
 
   setTimeout(function(){
-    message.channel.send(message.author.toString() + ` The Timer Has FINISHED!, it lasted: ${ms(ms(Timer), {long: true})}`)
+    message.channel.send(message.author.toString() + `  The Timer Has FINISHED!, it lasted: ${ms(ms(Timer), {long: true})}`)
 
   }, ms(Timer));
 
