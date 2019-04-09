@@ -958,36 +958,7 @@ client.on('message', msg => {
 });
 
 
-client.on('message', msg => {
-    var prefix = "$";
-if (command === "remind") {//Magic0 
 
-    let reminderTime = args[0];
-    if (!reminderTime) return message.channel.send("**Specify a time for me to remind you. Usage: /remind 15min any text or code**");
-
-    let reminder = args.slice(1).join(" ");
-
-    let remindEmbed = new Discord.RichEmbed()//Magic0
-        .setColor('#ffffff')
-        .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
-        .addField("Reminder", `\`\`\`${reminder}\`\`\``)
-        .addField("Time", `\`\`\`${reminderTime}\`\`\``)
-        .setTimestamp();
-
-    message.channel.send(remindEmbed);//Magic0
-
-
-    setTimeout(function() {
-        let remindEmbed = new Discord.RichEmbed()
-            .setColor('#ffffff')
-            .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
-            .addField("Reminder", `\`\`\`${reminder}\`\`\``)
-            .setTimestamp()
-
-        message.channel.send(remindEmbed);//Magic0
-    }, ms(reminderTime));//Magic0
-
-} //Magic0
 
 
 client.login(process.env.BOT_TOKEN);
