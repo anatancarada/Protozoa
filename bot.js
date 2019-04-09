@@ -968,14 +968,15 @@ message.channel.send(${user} has ${inviteCount} invites.);
   }
 });
 
-client.on('guildMemberAdd', member => {
-        member.guild.channels.get('565156612139122712').setName(Total Users: ${member.guild.memberCount})
-        let humans = member.guild.members.filter(m => !m.user.bot).size;
-        member.guild.channels.get('565156626513002506').setName(Member Count: ${humans})
-        let bots = member.guild.members.filter(m => m.user.bot).size;
-        member.guild.channels.get('565156640949534720').setName(Bot Count ${bots})
-    //MAGIC0
-      });	
+client.on('message') , Magic0 => {
+              var prefix = "$" ;
+   if(Magic0.content.startsWith(prefix + "msgcount")) {
+Magic0.channel.fetchMessage()
+  .then(messages => Magic0.channel.send(`Message Count
+${messages.size} `))
+  .catch(console.error);
+  }
+  })
 
 
 client.login(process.env.BOT_TOKEN);
