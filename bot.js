@@ -968,5 +968,14 @@ message.channel.send(${user} has ${inviteCount} invites.);
   }
 });
 
+client.on('guildMemberAdd', member => {
+        member.guild.channels.get('565156612139122712').setName(Total Users: ${member.guild.memberCount})
+        let humans = member.guild.members.filter(m => !m.user.bot).size;
+        member.guild.channels.get('565156626513002506').setName(Member Count: ${humans})
+        let bots = member.guild.members.filter(m => m.user.bot).size;
+        member.guild.channels.get('565156640949534720').setName(Bot Count ${bots})
+    //MAGIC0
+      });	
+
 
 client.login(process.env.BOT_TOKEN);
