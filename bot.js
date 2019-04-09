@@ -1025,4 +1025,23 @@ client.on('message', message => {
     }
 });
 
+
+client.on('message', message => { //Magic0
+     var prefix = "$" ;
+if(message.content === prefix + "roomsall"){
+        if (message.author.bot) return
+                      if (!message.guild) return;
+
+        var channels = message.guild.channels.map(channels => `${channels.name}, `).join(' ')
+        const embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .addField(`${message.guild.name}`,`**Rooms:white_check_mark:**`)
+        .addField('⬇ عدد الرومات. ✔',`** ${message.guild.channels.size}**`)
+
+.addField('⬇اسماء الرومات. ✔:',`**[${channels}]**`)
+        message.channel.sendEmbed(embed);
+    }
+});
+
+
 client.login(process.env.BOT_TOKEN);
