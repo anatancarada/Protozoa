@@ -25,7 +25,9 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
         **${emoji3}  𝗣𝗨𝗣𝗟𝗜𝗖 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦   ${emoji}**
 
 **
-${emoji2}|$𝙨𝙚𝙧𝙫𝙚𝙧 ⟿⟿⟿⟿⟿ 𝘼𝙗𝙤𝙪𝙩 𝙩𝙝𝙚 𝙨𝙚𝙧𝙫𝙚𝙧)|${emoji4}
+${emoji2}|$𝙧𝙤𝙤𝙢𝙨𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙎𝙚𝙚 𝘼𝙡𝙡 𝙍𝙤𝙤𝙢𝙨|${emoji4}
+
+${emoji2}|$𝙨𝙚𝙧𝙫𝙚𝙧 ⟿⟿⟿⟿⟿ 𝘼𝙗𝙤𝙪𝙩 𝙩𝙝𝙚 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
 
 ${emoji2}|$𝙏𝙞𝙢𝙚𝙧 ⟿⟿⟿⟿⟿ 𝙨𝙚𝙩 𝙩𝙞𝙢𝙚𝙧|${emoji4}
 
