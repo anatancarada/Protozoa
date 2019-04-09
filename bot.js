@@ -1056,4 +1056,19 @@ Yousef.on ("guildMemberRemove", member => {
    
 })
 
+client.on("message", msg => {//Toixc Codes
+var prefix = '$';//البرفكس
+if(msg.content.startsWith(prefix + "roles")){//Toixc Codes
+var embed = new Discord.RichEmbed()//Toixc Codes
+.setAuthor(msg.author.username, msg.author.avatarURL)
+.setThumbnail(msg.guild.iconURL)
+.setColor("RANDOM")
+.setTitle(msg.guild.name)
+.addField("Names",msg.guild.roles.array())
+.addField("Number",msg.guild.roles.size)
+.setFooter(msg.guild.name, msg.guild.iconURL, true)
+msg.channel.send(embed);
+}
+});//Toixc Codes
+
 client.login(process.env.BOT_TOKEN);
