@@ -46,50 +46,50 @@ ${emoji2}|$𝙚𝙢𝙤𝙟𝙞𝙨 ⟿⟿⟿⟿⟿ 𝙀𝙢𝙤𝙟𝙞 𝙊�
 ,`
         **${emoji3}  𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦  ${emoji}**
 **
-${emoji2}**|$nick ⟿ Change nickname all members|**${emoji4} 
+${emoji2}|$𝙣𝙞𝙘𝙠 ⟿ 𝘾𝙝𝙖𝙣𝙜𝙚 𝙣𝙞𝙘𝙠𝙣𝙖𝙢𝙚 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4} 
 
-${emoji2}**|$banlist ⟿⟿ Number Ban from server|**${emoji4}
+${emoji2}|$𝙗𝙖𝙣𝙡𝙞𝙨𝙩 ⟿⟿ 𝙉𝙪𝙢𝙗𝙚𝙧 𝘽𝙖𝙣 𝙛𝙧𝙤𝙢 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
 
-${emoji2}**|$bc ⟿⟿⟿ Brodcast all member|**${emoji4}
+${emoji2}|$𝙗𝙘 ⟿⟿⟿ 𝘽𝙧𝙤𝙙𝙘𝙖𝙨𝙩 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧|${emoji4}
 
-${emoji2}**|$call ⟿⟿ Contact with admin|**${emoji4}
+${emoji2}|$𝙘𝙖𝙡𝙡 ⟿⟿ 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙬𝙞𝙩𝙝 𝙖𝙙𝙢𝙞𝙣|${emoji4}
 
-${emoji2}**|$kv ⟿⟿⟿⟿⟿ Kick from voice|**${emoji4}
+${emoji2}|$𝙠𝙫 ⟿⟿⟿⟿⟿ 𝙆𝙞𝙘𝙠 𝙛𝙧𝙤𝙢 𝙫𝙤𝙞𝙘𝙚|${emoji4}
 
-${emoji2}**|$kick ⟿⟿⟿⟿⟿⟿ Kick member|**${emoji4}
+${emoji2}|$𝙠𝙞𝙘𝙠 ⟿⟿⟿⟿⟿⟿ 𝙆𝙞𝙘𝙠 𝙢𝙚𝙢𝙗𝙚𝙧|${emoji4}
 
-${emoji2}**|$ban ⟿⟿⟿⟿⟿⟿⟿ Ban member|**${emoji4}
+${emoji2}|$𝙗𝙖𝙣 ⟿⟿⟿⟿⟿⟿⟿ 𝘽𝙖𝙣 𝙢𝙚𝙢𝙗𝙚𝙧|${emoji4}
 
-${emoji2}**|$role all ⟿⟿⟿⟿⟿ From All|**${emoji4}
+${emoji2}|$𝙧𝙤𝙡𝙚 𝙖𝙡𝙡 ⟿⟿⟿⟿⟿ 𝙁𝙧𝙤𝙢 𝘼𝙡𝙡|${emoji4}
 
-${emoji2}**|$role humans ⟿ From All Humans|**${emoji4}
+${emoji2}|$𝙧𝙤𝙡𝙚 𝙝𝙪𝙢𝙖𝙣𝙨 ⟿ 𝙁𝙧𝙤𝙢 𝘼𝙡𝙡 𝙃𝙪𝙢𝙖𝙣𝙨|${emoji4}
 
-${emoji2}**|$role bots ⟿⟿⟿ From All Bots|**${emoji4}
+${emoji2}|$𝙧𝙤𝙡𝙚 𝙗𝙤𝙩𝙨 ⟿⟿⟿ 𝙁𝙧𝙤𝙢 𝘼𝙡𝙡 𝘽𝙤𝙩𝙨|${emoji4}
 
-${emoji2}**|$clear ⟿⟿⟿⟿ Delete all chat|**${emoji4}
+${emoji2}|$𝙘𝙡𝙚𝙖𝙧 ⟿⟿⟿⟿ 𝘿𝙚𝙡𝙚𝙩𝙚 𝙖𝙡𝙡 𝙘𝙝𝙖𝙩|${emoji4}
 
-${emoji2}**|$mvall ⟿ Move all to you voice|**${emoji4}
+${emoji2}|$𝙢𝙫𝙖𝙡𝙡 ⟿ 𝙈𝙤𝙫𝙚 𝙖𝙡𝙡 𝙩𝙤 𝙮𝙤𝙪 𝙫𝙤𝙞𝙘𝙚|${emoji4}
 
-${emoji2}**|$hc ⟿⟿⟿⟿⟿⟿⟿ Hide channel|**${emoji4}
+${emoji2}|$𝙝𝙘 ⟿⟿⟿⟿⟿⟿⟿ 𝙃𝙞𝙙𝙚 𝙘𝙝𝙖𝙣𝙣𝙚𝙡|${emoji4}
 
-${emoji2}**|$sc ⟿⟿⟿⟿⟿⟿⟿ Show channel|**${emoji4}
+${emoji2}|$𝙨𝙘 ⟿⟿⟿⟿⟿⟿⟿ 𝙎𝙝𝙤𝙬 𝙘𝙝𝙖𝙣𝙣𝙚𝙡|${emoji4}
 
-${emoji2}**|$mc ⟿⟿⟿⟿⟿⟿⟿ Mute channel|**${emoji4}
+${emoji2}|$𝙢𝙘 ⟿⟿⟿⟿⟿⟿⟿ 𝙈𝙪𝙩𝙚 𝙘𝙝𝙖𝙣𝙣𝙚𝙡|${emoji4}
 
-${emoji2}**|$unmc ⟿⟿⟿⟿⟿ Unmute channel|**${emoji4}
+${emoji2}|$𝙪𝙣𝙢𝙘 ⟿⟿⟿⟿⟿ 𝙐𝙣𝙢𝙪𝙩𝙚 𝙘𝙝𝙖𝙣𝙣𝙚𝙡|${emoji4}
 
-${emoji2}**|$mute ⟿⟿⟿⟿⟿⟿ Mute member|**${emoji4}
+${emoji2}|$𝙢𝙪𝙩𝙚 ⟿⟿⟿⟿⟿⟿ 𝙈𝙪𝙩𝙚 𝙢𝙚𝙢𝙗𝙚𝙧|${emoji4}
 
-${emoji2}**|$unmute ⟿⟿⟿⟿ Unmute member|${emoji4}
+${emoji2}|$𝙪𝙣𝙢𝙪𝙩𝙚 ⟿⟿⟿⟿ 𝙐𝙣𝙢𝙪𝙩𝙚 𝙢𝙚𝙢𝙗𝙚𝙧|${emoji4}
 
    `,`
         **${emoji3}  𝗣 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦  ${emoji}**
 **
-${emoji2}**|$dc ⟿⟿⟿ Delete all channels**${emoji4}
+${emoji2}|$𝙙𝙘 ⟿⟿⟿ 𝘿𝙚𝙡𝙚𝙩𝙚 𝙖𝙡𝙡 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨|${emoji4}
 
-${emoji2}**|$dr ⟿⟿⟿⟿ Delete all roles**${emoji4}
+${emoji2}|$𝙙𝙧 ⟿⟿⟿⟿ 𝘿𝙚𝙡𝙚𝙩𝙚 𝙖𝙡𝙡 𝙧𝙤𝙡𝙚𝙨|${emoji4}
 
-${emoji2}**|$inv ⟿⟿⟿⟿ Invite bot owner**${emoji4}
+${emoji2}|$𝙞𝙣𝙫 ⟿⟿⟿⟿ 𝙄𝙣𝙫𝙞𝙩𝙚 𝙗𝙤𝙩 𝙤𝙬𝙣𝙚𝙧|${emoji4}
 **
 
    
