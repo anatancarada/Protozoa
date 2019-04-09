@@ -968,11 +968,11 @@ message.channel.send(${user} has ${inviteCount} invites.);
   }
 });
 
-client.on('message') , Magic0 => {
+client.on('message') , msg => {
               var prefix = "$" ;
-   if(Magic0.content.startsWith(prefix + "msgcount")) {
-Magic0.channel.fetchMessage()
-  .then(messages => Magic0.channel.send(`Message Count
+   if(msg.content.startsWith(prefix + "msgcount")) {
+msg.channel.fetchMessage()
+  .then(messages => msg.channel.send(`Message Count
 ${messages.size} `))
   .catch(console.error);
   }
