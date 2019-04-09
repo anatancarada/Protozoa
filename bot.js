@@ -964,7 +964,7 @@ client.on('message', message =>{
         if(message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
   
         ros=message.guild.roles.size,
-        data = [['Rank', 'RoleName']]
+        data = [['Rank', 'Protozoa']]
         for(let i =0;i<ros;i++){
             if(message.guild.roles.array()[i].id !== message.guild.id){
          data.push([i,`${message.guild.roles.filter(r => r.position == ros-i).map(r=>r.name)}`])
