@@ -26,6 +26,8 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 **
 ${emoji2}|$𝙨𝙚𝙧𝙫𝙚𝙧 ⟿⟿⟿⟿⟿ 𝘼𝙗𝙤𝙪𝙩 𝙩𝙝𝙚 𝙨𝙚𝙧𝙫𝙚𝙧)|${emoji4}
 
+${emoji2}|𝙝𝙞,𝙥𝙞𝙣𝙜,𝙗𝙮𝙚 ⟿⟿⟿⟿⟿ 𝙍𝙚𝙥𝙡𝙖𝙮𝙞𝙣𝙜 𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨)|${emoji4}
+
 ${emoji2}|$𝙖𝙡𝙡𝙗𝙤𝙩𝙨 ⟿⟿ 𝙉𝙪𝙗𝙢𝙚𝙧𝙨 𝙗𝙤𝙩𝙨 𝙞𝙣 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
 
 ${emoji2}|$𝙗𝙤𝙩𝙞𝙣 ⟿⟿⟿⟿⟿⟿ 𝘽𝙤𝙩 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣|${emoji4}
@@ -934,6 +936,36 @@ client.on("ready", () => { //Magic0 is here :) Rainbow Code  by: Mag.
     client.guilds.get('564734929641013268').roles.find("name", "Protozoa").setColor("RANDOM");
   };
   setInterval(lol, 2000);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'hi') {
+    msg.reply('hi!');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'bye') {
+    msg.reply('bye!');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Ping') {
+    msg.reply('[Pong!');
+  }
+});
+
+client.on('message', message => {
+    var prefix = "$";
+   if(message.content.startsWith(prefix + "invites")) {
+    message.guild.fetchInvites().then(invs => {
+      let user = message.mentions.users.first() || message.author
+      let personalInvites = invs.filter(i => i.inviter.id === user.id);
+      let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
+message.channel.send(${user} has ${inviteCount} invites.);
+});
+  }
 });
 
 
