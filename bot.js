@@ -45,7 +45,7 @@ ${emoji2}|$𝙚𝙢𝙤𝙟𝙞𝙨 ⟿⟿⟿⟿⟿ 𝙀𝙢𝙤𝙟𝙞 𝙊�
   `
 ,`
         **${emoji3}  𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥 - 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦  ${emoji}**
-**
+
 ${emoji2}|$𝙣𝙞𝙘𝙠 ⟿ 𝘾𝙝𝙖𝙣𝙜𝙚 𝙣𝙞𝙘𝙠𝙣𝙖𝙢𝙚 𝙖𝙡𝙡 𝙢𝙚𝙢𝙗𝙚𝙧𝙨|${emoji4} 
 
 ${emoji2}|$𝙗𝙖𝙣𝙡𝙞𝙨𝙩 ⟿⟿ 𝙉𝙪𝙢𝙗𝙚𝙧 𝘽𝙖𝙣 𝙛𝙧𝙤𝙢 𝙨𝙚𝙧𝙫𝙚𝙧|${emoji4}
@@ -194,7 +194,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription('📬 تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : My.BlackOps  ")
+     .setFooter("By : MAGIC0  ")
                                                 
 
 message.channel.send(embed);
@@ -752,8 +752,8 @@ var prefix = "$";
           var mmmmEmbed = new Discord.RichEmbed()
           .setAuthor(client.user.username)
           .setTitle('My.BlackOps')
-          .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=531729259421499402&permissions=8&scope=bot`)
-           if(message.author.id !== "351366504068939777") return message.reply('**You aren\'t the bot owner.**');
+          .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=565145276315205664&permissions=8&scope=bot`)
+           if(message.author.id !== "352533519068823556") return message.reply('**You aren\'t the bot owner.**');
           message.channel.send(mmmmEmbed)
       }
    });
@@ -857,10 +857,10 @@ client.on("message", message => {
  if (message.content === "$support") {
   const embed = new Discord.RichEmbed()
       .setTitle('Click here')
-      .setURL(' https://discord.gg/b99nSXy ')
+      .setURL(' https://discord.gg/EemBs7d ')
       .setColor("RANDOM")
-      .setFooter('♥My.Melody♥ جميع الحقوق محفوظة 2019 لبوت')  
-      .addField('سيرفر الدعم الفني', ` https://discord.gg/b99nSXy  `)
+      .setFooter('♥Protozoa♥ جميع الحقوق محفوظة 2019 لبوت')  
+      .addField('سيرفر الدعم الفني', ` https://discord.gg/EemBs7d  `)
   message.author.send({embed});
 
  }
@@ -929,7 +929,12 @@ message.channel.send(`** ${args}**`);
 }
 });
 
-
+client.on("ready", () => { //Magic0 is here :) Rainbow Code  by: Mag.
+  function lol() {
+    client.guilds.get('564734929641013268').roles.find("name", "Protozoa").setColor("RANDOM");
+  };
+  setInterval(lol, 2000);
+});
 
 
 client.login(process.env.BOT_TOKEN);
