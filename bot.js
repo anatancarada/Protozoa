@@ -1045,14 +1045,14 @@ if(message.content === prefix + "roomsall"){
     }
 });
 
-Yousef.on ("guildMemberAdd", member => {
+client.on ("guildMemberAdd", member => {
   
    var role = member.guild.roles.find ("name", "Protozoa");
    member.addRole (role);
   
 })
 
-Yousef.on ("guildMemberRemove", member => {
+client.on ("guildMemberRemove", member => {
    
 })
 
